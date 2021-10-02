@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Domains')">Domains</button>
+  <button class="tablinks" onclick="openCity(event, 'Advanced')">Advanced</button>
+  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+</div>
+
+<div id="Home" class="tabcontent">
+  
+  <input type="text" id="search" placeholder="Search..">
+  
+  <i class="fa fa-search" onclick="myFunction()" id="icon"></i>
+</div>
+
+<div id="Domains" class="tabcontent">
+    <div class="border">
+        </div >
+        <div class="border">
+        </div >
+        <div class="border">
+        </div >
+        <div class="border">
+        </div>
+        <div class="border">
+        </div >
+        <div class="border">
+        </div >
+        <div class="border">
+        </div >
+        <div class="border">
+        </div>
+</div>
+
+<div id="Advanced" class="tabcontent">
+  <form>
+    <form> 
+
+        
+        <div class="row">
+        
+        <div class="col-1">Enter Your Query Word</div>
+        <div class="col-2">
+        <input type="text" placeholder="College"  class="align"></br>
+        </div>
+        
+        <div class="col-1">Enter the preferred year range</div>
+        <div class="col-2">
+            <select  name="2021" class="align">
+                <option value="beauty">2021</option>
+                <option value="beauty">2020</option>
+                <option value="beauty">2019</option>
+                <option value="beauty">2018</option>
+                <option value="beauty">2017</option>
+                <option value="beauty">2016</option>
+                <option value="beauty">2015</option>
+                <option value="beauty">2014</option>
+                <option value="beauty">2013</option>
+                <option value="beauty">2012</option>
+                <option value="beauty">2011</option>
+                <option value="beauty">2010</option>
+                
+
+                </select></br>
+        </div>
+        
+        <div class="col-1">Enter the preferred ranking</div>
+        <div class="col-2">
+            <select  name="TOP-5" class="align">
+                <option value="beauty">TOP-5</option>
+                <option value="beauty">TOP-10</option>
+                <option value="beauty">TOP-15</option>
+                <option value="beauty">TOP-20</option>
+                <option value="beauty">TOP-25</option>
+        </div>
+       
+        
+
+       </div> 
+          
+      </form>
+    
+   <div id="sub">
+<input class="submit" type="button" value="Click To Search">
+</div>
+
+<div id="About" class="tabcontent">
+    <h3>About</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+function myFunction() {
+  
+    window.location.href = "http://www.w3schools.com";
+  
+}
+
+</script>
+   
+</body>
+</html> 
