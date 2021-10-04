@@ -4,13 +4,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="bgchange.js"></script>
+<script src="tabchanges.js"></script>
+<script src="navigators.js"></script>
 </head>
 <body>
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
-  <button class="tablinks" onclick="openCity(event, 'Domains')">Domains</button>
-  <button class="tablinks" onclick="openCity(event, 'Advanced')">Advanced</button>
-  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+  <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">HOME</button>
+  <button class="tablinks" onclick="openCity(event, 'Domains')">DOMAINS</button>
+  <button class="tablinks" onclick="openCity(event, 'Advanced')">ADVANCED</button>
+  <button class="tablinks" onclick="openCity(event, 'About')">ABOUT</button>
 </div>
 
 <div id="Home" class="tabcontent">
@@ -22,28 +25,28 @@
 
 <div id="Domains" class="tabcontent">
     <div class="border">
-     <a href="#"> <img src="Minip 1.png"></a>
+     <a href="#"> <img src="Minip 1.png" onmouseover="onimg.call(this)" onmouseout="outimg.call(this)"></a>
         </div >
         <div class="border">
-          <a href="#"><img src="Minip 2.png"></a>
+          <a href="#"><img src="Minip 2.png" onmouseover="onimg1.call(this)" onmouseout="outimg1.call(this)"></a>
         </div >
         <div class="border">
-          <a href="#"><img src="Minip 3.png"></a>
+          <a href="#"><img src="Minip 3.png" onmouseover="onimg2.call(this)" onmouseout="outimg2.call(this)"></a>
         </div >
         <div class="border">
-          <a href="#"><img src="Minip 4.png"></a>
+          <a href="#"><img src="Minip 4.png" onmouseover="onimg3.call(this)" onmouseout="outimg3.call(this)"></a>
         </div>
         <div class="border">
-          <a href="#"><img src="Minip 5.png"></a>
+          <a href="#"><img src="Minip 5.png" onmouseover="onimg4.call(this)" onmouseout="outimg4.call(this)"></a>
         </div >
         <div class="border">
-          <a href="#"><img src="Minip 6.png"></a>
+          <a href="#"><img src="Minip 6.png" onmouseover="onimg5.call(this)" onmouseout="outimg5.call(this)"></a>
         </div >
         <div class="border">
-          <a href="#"><img src="Minip 7.png"></a>
+          <a href="#"><img src="Minip 7.png" onmouseover="onimg6.call(this)" onmouseout="outimg6.call(this)"></a>
         </div >
         <div class="border">
-          <a href="#"><img src="Minip 8.png"></a>
+          <a href="#"><img src="Minip 8.png" onmouseover="onimg7.call(this)" onmouseout="outimg7.call(this)"></a>
         </div>
 </div>
 
@@ -106,27 +109,6 @@
   
 
 <script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-document.getElementById("defaultOpen").click();
-
-function myFunction() {
-  
-    window.location.href = "http://www.w3schools.com";
-  
-}
 
 </script>
    
