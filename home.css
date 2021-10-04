@@ -4,8 +4,8 @@ body {font-family: 'Times New Roman', Times, serif; margin: 0;}
 
 .tab {
   float: left;
-  border: 1px solid #ccc;
-  background-color: yellow;
+  border: 1px solid pink;
+  background-color: pink;
   width: 20%;
   height: 660px;
   font-family: 'Times New Roman', Times, serif;
@@ -26,11 +26,11 @@ body {font-family: 'Times New Roman', Times, serif; margin: 0;}
 }
 
 .tab button:hover {
-  background-color: #ddd;
+  background-color: white;
 }
 
 .tab button.active {
-  background-color: #ccc;
+  background-color:white;
 }
 
 .tabcontent {
@@ -40,7 +40,7 @@ body {font-family: 'Times New Roman', Times, serif; margin: 0;}
   width: 80%;
   border-left: none;
   height: 660px;
-  background-color: blue;
+  background-color: white;
 }
 
 #search
@@ -52,13 +52,13 @@ padding: 25px;
 font-family: 'Times New Roman', Times, serif;
 font-size: 25px;
 border-radius: 10px;
-border-color: blue;
+border-color: black;
 }
 
 #icon
 {
  
-    color: white;
+    color: black;
     cursor: pointer;
     font-size: 55px;
     padding: 10px;
@@ -68,12 +68,13 @@ border-color: blue;
 
 .border
 {
-    height: 255px;
+    height: 260px;
     width:210px;
     float:left;
     margin:10px;
     margin-top:50px;
-    border: 5px solid white;
+    border: 5px solid black;
+    
     cursor: pointer;
     }
 
@@ -87,7 +88,7 @@ border-color: blue;
           padding: 20px;
           background-color: white;
           border-radius: 5px;
-          border: 1px solid white;
+          border: 1px solid black;
           font-family: 'Times New Roman', Times, serif;
           font-size: 25px;  
       }
@@ -97,7 +98,7 @@ border-color: blue;
         float: left;
         width:40%;
         margin-top:80px;
-        color: white;
+        color: black;
         font-size: 25px;
         padding:10px;
         font-family: 'Times New Roman', Times, serif;
@@ -107,16 +108,21 @@ border-color: blue;
         float: left;
         width: 60%;
         margin-top: 80px;
+        border-color:pink;
     }
   .submit
   {
    margin-left: 150px;
-     
+     font-size: 20px;
    padding: 25px;
    border-radius: 10px;
-   background-color:thistle;
+   background-color:white;
    color: black;
-   border-color: thistle;
+   border-color: black;
    cursor: pointer;
+   font-family: 'Times New Roman', Times, serif;
   }
- 
+ .tablinks
+ {
+   font-family: 'Times New Roman', Times, serif;
+ }
