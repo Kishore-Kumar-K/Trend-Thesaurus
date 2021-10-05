@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Marketing Trends</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 70px;
+  text-align: center;
+  background:#6B8490;
+  color: white;
+   line-height: 2.5;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #252930;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  line-height: 2.5;
+  font-size: 18px;
+}
+
+
+.footer {
+  padding: 1px;
+  text-align: center;
+  background: #6B8490;
+}
+
+@media screen and (max-width: 500px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 30px;
+}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Times New Roman";
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #f1f1f1;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #454747;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: black;
+  }
+}
+</style>
+</head>
+
+<body>
+
+
+<div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div>
+
+ <div class="header">
+  <h1>Marketing Trends</h1>
+  <p>Top 5 Trends and Theories In The Field Of Marketing</p>
+</div>
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">Domain</a>
+  <a href="#">Advanced</a>
+  <a href="#" class="right">About</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h1>                    
+    </h1>
+    <h2>Timeline</h2>
+<div class="container">
+  <div class="timeline">
+    <ul>
+      <li>
+        <div class="timeline-content">
+          <p> Chatbots </p>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          <p>Personalised Email Marketing</p>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          <p>Video Marketing<p>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          <p>User-Generated Content</p>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          <p>Geofencing </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+  </div>
+
+  <div class="main">
+    <h1>Top Trends Which Can Help Marketers To Survive In his New Marketing Era</h1>
+    <h4>Include these trends in your strategy of reach your goals</h4>
+<p>Keeping up with the latest digital marketing trends in the industry is a necessity for professionals who want a future in digital marketing. 
+
+    With the pace of change rising every year, each digital marketer has to constantly invest time and energy to upskill and learn. 
+    
+    Having a sound knowledge of the workings of algorithms, new changes or features gives you the first-mover advantage and creates the most effective marketing campaigns for you and your company.
+    
+    As the new year begins, digital marketing enthusiasts everywhere have started to search and look around for the latest trends observed.</p>    <br>
+    <div><img src="C:\Users\WINDOWS 10\Desktop\mini project 3\domains\Minip 2web.png" alt="marketing" width= 100% height=100%></div>
+    
+    <p><b>1. Chatbots</b>
+    </p><p>Chatbots are considered one of the top digital marketing trends in 2021, the AI-based technology makes use of instant messaging to chat with customers, and with site visitors. It is designed to communicate with customers by textual or auditory methods. 
+
+        Businesses can leverage the use of chatbots to engage with customers. Since there are plenty of users visiting the website at once, it advantageous to have a technology that answers hundreds of users at once.  The benefits of having chatbots are 24/7 customer service, instant responses to inquiries, and answers to simple questions.  
+        
+        63% of people prefer messaging on chatbots to communicate with businesses or brands. This virtual support provides excellent customer services, this means a business gets rid of repetitive tasks and can focus on important work. </p>
+    <br>
+    <p><b>2.Personalised Email Marketing</b></p>
+    <p>Email personalization is when you put some data from your prospects and subscribers, e.g. the subscriber’s name or company they work at, in your email body or subject line in order to show that you’ve tailored the content for them personally.
+
+        In other words, personalized emails are those emails that, even if they’re being sent in bulk to your email list, still include dynamic content, such as custom fields – AKA variables – that are differentiated from one another based on data points you know about them.
+        
+        An example might be that you personalize your emails based on demographics, a client’s purchase history, time zone, past behavior, and other interests, in order to increase your click-through rates. The real goal here is, of course, to improve conversion rates on your website.</p>
+    <br>
+    <p><b>3.Video Marketing</b></p>
+    <p>Video Marketing is also one of the top digital marketing trends in 2021 and is likely to be at the top for more years to come. Here are some stats that will demonstrate the importance of including a video in your digital marketing current trends list.One of the issues faced by marketers in recent years was to showcase long-form texts on mobile screens, as it becomes too difficult and tedious for users to read them.  However, a video can present the same information in a much better way regardless of the device.  
+
+        According to Seotribunal, if your website includes a video, it’s 50 times more likely to bring organic search results as compared to plain text. Why does this happen? Because people find video content more captivating, hence google brings such sites on the top results. 
+        
+        But simply producing a video after another isn’t enough. You need to make sure that you are well-aware of the ongoing video marketing trends, a few of them are listed below:
+        
+        Livestreams on mobile
+        Short-form videos
+        user-generated video content
+        Online Training & Educational Videos
+        Video advertising </p>
+    <br>
+    <p><b>4.User-Generated Content</b></p>
+    <p>People like to participate in activities, especially activities relating to their favourite products or services. User-Generated Content or UGC harnesses this excitement of the customer and prompts them to create something of their own with the concerned product and share it with the world.
+
+        UGC campaigns run on the creative submissions by the customers of a product or service, as per the challenge or prompt given by the company. This strategy is so effective that UGC posts enjoy a 4 times higher click-through rate in comparison to normal promotional campaigns.
+        
+        UGC is a great strategy for a couple of reasons. Firstly, it massively reduces the time, effort, and resources required to run a campaign. UGC campaigns gather a pool of high-quality promotional materials, all submitted from the customer at no cost to the organization. </p>
+    <br>
+    <p><b>5.Geofencing </b></p>
+    <p>Geofencing is a location-based service marketing in which an app or other software program uses radio frequency identification (RFID), GPS, Wi-Fi, and cellular data to provoke a targeted marketing action like a text, social media advertisement, email, or an app notification. When the mobile device enters or exits a geographic boundary, it is known as geo-fence.</p>
+    <br>
+    <p><b>Wrapping up</b></p>
+    <p>The world of digital marketing is highly dynamic, new trends keep on coming and change the way marketing is done. As the pace of technology keeps on rising, every year we will see newer and more exciting trends changing how we as digital marketers communicate our product. 
+
+        Keeping up with these trends helps digital marketers stay relevant in the market and deliver the best value to their clients. One way to do that is to sign up for comprehensive digital marketing courses which equip you with current industry-relevant knowledge and skills.</p>
+</div>
+
+ </div>
+<div class="footer">
+  <h6>@TREND THESARAUS</h6>
+</div>
+
+<script>
+
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
