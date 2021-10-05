@@ -63,7 +63,7 @@ function outimg6()
 
 function onimg7()
 {
-  this.setAttribute("src","minip 8b.png")
+  this.setAttribute("src","minip 8bl.png")
 }
 function outimg7()
 {
