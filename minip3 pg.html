@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Technical Trends</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 70px;
+  text-align: center;
+  background:#6B8490;
+  color: white;
+   line-height: 2.5;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #252930;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  line-height: 2.5;
+  font-size: 18px;
+}
+
+
+.footer {
+  padding: 1px;
+  text-align: center;
+  background: #6B8490;
+}
+
+@media screen and (max-width: 500px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 30px;
+}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+html {
+  font-family: "times new roman";
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #f1f1f1;
+
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #6B8490;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+    text-align: center;
+
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 300;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: black;
+  }
+}
+</style>
+</head>
+
+<body>
+
+
+<div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div>
+
+ <div class="header">
+  <h1>Technical Trends</h1>
+  <p>Top Trends and Theories In The Field Of Technology</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="index.html">Domain</a>
+  <a href="index.html">Advanced</a>
+  <a href="index.html" class="right">About</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h1>                    
+    </h1>
+    <h2>Timeline</h2>
+<div class="container">
+  <div class="timeline">
+    <ul>
+      <li>
+        <div class="timeline-content">
+          <p>DevSecOps</p>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          <p>Predictive & personalized medicine</p>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          <p>Big Data Analytics<p>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          <p>Intelligent Process Automation</p>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          <p>Cybersecurity</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+  </div>
+
+  <div class="main">
+    <h1>Emerging Trends in Technology</h1>
+    <p>Technology trend awareness as a skill refers to being mindful of the technology that is recently becoming popular and is readily accepted in the market or industry. It also encompasses one's ability to recognize and understand the usefulness of any such technology for the success of his business.</p>
+    <br>
+    <p>Technology refers to methods, systems, and devices which are the result of scientific knowledge being used for practical purposes. Technology is changing fast. They should be allowed to wait for cheaper technologies to be developed.The definition of technology is science or knowledge put into practical use to solve problems or invent useful tools. ... An example of technology is the Internet which has made up-to-date information available to anyone with access in a matter of moments and provides real time information about events around the world.</p>
+    <div><img src="C:\Users\WINDOWS 10\Desktop\mini project 3\domains\Minip 3web.png" alt="Education" width= 100% height=100%></div>
+    
+    <p><b>1.DevSecOps</b></p>
+    <br>
+    <p>DevSecOps represents a natural and necessary evolution in the way development organizations approach security. In the past, security was 'tacked on' to software at the end of the development cycle (almost as an afterthought) by a separate security team and was tested by a separate quality assurance (QA) team.
+This was manageable when software updates were released just once or twice a year. But as software developers adopted Agile and DevOps practices, aiming to reduce software development cycles to weeks or even days, the traditional 'tacked-on' approach to security created an unacceptable bottleneck.
+
+DevSecOps integrates application and infrastructure security seamlessly into Agile and DevOps processes and tools. It addresses security issues as they emerge, when they're easier, faster, and less expensive to fix (and before they are put into production). Additionally, DevSecOps makes application and infrastructure security a shared responsibility of development, security, and IT operations teams, rather than the sole responsibility of a security silo. </p>
+    <br>
+    <p><b>2.Predictive & personalized medicine</b></p>
+    <br>
+    <p>Throughout history, the practice of medicine has largely been reactive. Even today, we usually must wait until the onset of diseases and then try to treat or cure them. And because we don’t fully understand the genetic and environmental factors that cause major diseases such as cancer, Alzheimer’s and diabetes, our efforts to treat these diseases are often imprecise, unpredictable and ineffective.
+The drugs and treatments we devise are tested on broad populations and are prescribed using statistical averages. Consequently, they work for some patients but not for many others, due to genetic differences among the population. On average, any given prescription drug now on the market only works for half of those who take it.</p>
+    <p><b>3.Big Data Analytics</b></p>
+    <br>
+    <p>Each day, your customers generate an abundance of data. Every time they open your email, use your mobile app, tag you on social media, walk into your store, make an online purchase, talk to a customer service representative, or ask a virtual assistant about you, those technologies collect and process that data for your organization. And that’s just your customers. Each day, employees, supply chains, marketing efforts, finance teams, and more generate an abundance of data, too. Big data is an extremely large volume of data and datasets that come in diverse forms and from multiple sources. Many organizations have recognized the advantages of collecting as much data as possible. But it’s not enough just to collect and store big data—you also have to put it to use. Thanks to rapidly growing technology, organizations can use big data analytics to transform terabytes of data into actionable insights.</p>
+    <br>
+    <p><b>4.Intelligent Process Automation</b></p>
+    <br>
+    <p>Intelligent Process Automation (IPA) refers to the application of Artificial Intelligence and related new technologies, including Computer Vision, Cognitive automation and Machine Learning to Robotic Process Automation. This convergence of technologies produces automation capabilities that dramatically elevate business value and competitive advantages for our customers. UiPath creates IPA solutions by using artificial intelligence (AI) to amplify the power ofour RPA technology in three ways. UiPath’s IPA is based on advanced computer vision, unattended robotics, and integration with third party cognitive services from Google, IBM, Microsoft and ABBYY. With a continuous release cycle, UiPath is committed to its AI/Cognitive journey and will be offering more Natural Language Processing and Machine Learning services on Cloud and on-premise in upcoming releases.
+</p>
+    <br>
+    <p><b>5.Cybersecurity</b></p>
+    <br>
+    <p>Cyber security is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. It's also known as information technology security or electronic information security. The term applies in a variety of contexts, from business to mobile computing, and can be divided into a few common categories. Cyber security is important because government, military, corporate, financial, and medical organizations collect, process, and store unprecedented amounts of data on computers and other devices. A significant portion of that data can be sensitive information, whether that be intellectual property, financial data, personal information, or other types of data for which unauthorized access or exposure could have negative consequences. Organizations transmit sensitive data across networks and to other devices in the course of doing businesses, and cyber security describes the discipline dedicated to protecting that information and the systems used to process or store it.</p>
+    <br>
+    <p><b>Wrapping up</b></p>
+    <p>Today, digital technologies such as data pooling and AI are used to track and diagnose issues in agriculture, health, and the environment, or to perform daily tasks such as navigating traffic or paying a bill. They can be used to defend and exercise human rights – but they can also be used to violate them, for example, by monitoring our movements, purchases, conversations and behaviours. Governments and businesses increasingly have the tools to mine and exploit data for financial and other purposes.
+
+However, personal data would become an asset to a person, if there were a formula for better regulation of personal data ownership. Data-powered technology has the potential to empower individuals, improve human welfare, and promote universal rights, depending on the type of protections put in place.</p>
+</div>
+
+ </div>
+<div class="footer">
+  <h6>@TREND THESARAUS</h6>
+</div>
+
+<script>
+
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
