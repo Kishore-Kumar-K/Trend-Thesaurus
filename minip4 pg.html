@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Technical Trends</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 70px;
+  text-align: center;
+  background:#6B8490;
+  color: white;
+   line-height: 2.5;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #252930;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  line-height: 2.5;
+  font-size: 18px;
+}
+
+
+.footer {
+  padding: 1px;
+  text-align: center;
+  background: #6B8490;
+}
+
+@media screen and (max-width: 500px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 30px;
+}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+html {
+  font-family: "times new roman";
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #f1f1f1;
+
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #6B8490;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+    text-align: center;
+
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 300;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: black;
+  }
+}
+</style>
+</head>
+
+<body>
+
+
+<div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div>
+
+ <div class="header">
+  <h1>Medical Trends</h1>
+  <p>Top Trends and Theories In The Field Of Technology</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="index.html">Domain</a>
+  <a href="index.html">Advanced</a>
+  <a href="index.html" class="right">About</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h1>                    
+    </h1>
+    <h2>Timeline</h2>
+<div class="container">
+  <div class="timeline">
+    <ul>
+      <li>
+        <div class="timeline-content">
+          <p>Personalization of Care</p>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          <p>Virtual Care</p>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          <p>Patient Consumerization<p>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          <p>Real-time analytics to expedite care</p>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          <p>Increasing storage and self-distribution</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+  </div>
+
+  <div class="main">
+    <h1>Medical Trends which can change the world</h1>
+    <br>
+    <div><img src="C:\Users\WINDOWS 10\Desktop\mini project 3\domains\Minip 4web.png" alt="Medicare" width= 100% height=100%></div>
+    
+    <p><b>1.Personalization of Care</b></p>
+    <br>
+<p>While patients want the convenience and ease of digital interactions, personalized care is still the touchstone of their loyalty. According to a 2020 survey of health care consumers, an “ideal” health care experience requires a personal touch, whether that encounter occurs virtually or in person. Patients say it’s paramount that clinicians take time to listen, show they care and communicate clearly. For improvement efforts to have teeth, they must be associated with programs that drive measurable outcomes. For example, a major academic medical center created a communication training program to teach doctors best practices to follow in interactions with patients. Within a year, the percentage of patients who “always” felt that the doctors listened, treated them with respect and explained things well rose by 9 points.</p>
+    <br>
+    <p><b>2.Virtual Care</b></p>
+    <br>
+<p>We will continue to see the emergence of virtual care solutions across the care continuum from telehealth visits to virtual hospital care and home-based care. In February 2020, less than 1 percent of Medicare primary care visits were conducted via telehealth; by April, driven by the pandemic, the volume had risen to 43 percent. This growth appears to have staying power as both patients and physicians adopt a new virtualization mindset. It will be important for organizations to align their virtual strategy with the changing needs of their markets, growth strategy and evolving payment models. This isn’t a silver bullet but instead is a natural progression to support providers and patients in a more meaningful way: Virtual needs to become the way organizations work versus a disconnected component of the strategy.</p>
+    <p><b>3.Patient Consumerization</b></p>
+    <br>
+<p>Today we can receive goods the same day we order them, and track them minute by minute from order placement to delivery. It’s not surprising that patients expect the same high level of efficiency and transparency from their health care providers. Instead, some patients may have to wait weeks or months for an appointment and have only a vague idea of when exam results will be available. Organizations need to assess their current barriers to consumer satisfaction and deploy analytics and patient-centric technologies to improve the convenience, speed and transparency of care. For example, when a West Coast health system adopted precision scheduling practices to minimize wasted time between imaging exams, they were able to open up 5,000 new exam slots annually, so patients could be scheduled sooner.</p>
+    <br>
+    <p><b>4.Real-time analytics to expedite care</b></p>
+    <br>
+<p>Large organizations are harnessing real-time information to drive the care process. Command center software platforms, for example, combine systems engineering, predictive analytics and problem-solving to manage patient flow in and through the health system while aiming to preserve clinical quality, safety and the patient experience. The development of next generation applications to support caregivers is continuing to drive breakthrough performance in both a centralized and decentralized manner.</p>
+    <br>
+    <p><b>5.Increasing storage and self-distribution</b></p>
+    <br>
+<p>What’s old is new again. We see a trend toward more self-distribution models instead of just-in-time delivery from distributors. This allows organizations to buy in bulk, control distribution and minimize their reliance on items at risk of being depleted. Organizations do not have a limitless supply of capital so this is not a one-size-fits-all procurement strategy, but it may make sense for certain items in the supply chain.</p>    <br>
+    <p><b>Wrapping up</b></p>
+    <p>Today, digital technologies such as data pooling and AI are used to track and diagnose issues in agriculture, health, and the environment, or to perform daily tasks such as navigating traffic or paying a bill. They can be used to defend and exercise human rights – but they can also be used to violate them, for example, by monitoring our movements, purchases, conversations and behaviours. Governments and businesses increasingly have the tools to mine and exploit data for financial and other purposes.
+
+However, personal data would become an asset to a person, if there were a formula for better regulation of personal data ownership. Data-powered technology has the potential to empower individuals, improve human welfare, and promote universal rights, depending on the type of protections put in place.</p>
+</div>
+
+ </div>
+<div class="footer">
+  <h6>@TREND THESARAUS</h6>
+</div>
+
+<script>
+
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
